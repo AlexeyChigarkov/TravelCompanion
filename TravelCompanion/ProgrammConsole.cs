@@ -138,7 +138,7 @@ namespace TravelCompanion
 
             Console.WriteLine("Choose the number of  operation:");
             Console.WriteLine("************************************************************************");
-            Console.WriteLine("Find passenger for your driver request - 1\n" +
+            Console.WriteLine("Find passengers for your driver request - 1\n" +
                               "Find drivers for your passenger request - 2\n" +
                               "Delete driver request - 3\n" +
                               "Delete passenger request - 4\n" +
