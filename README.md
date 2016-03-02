@@ -3,7 +3,7 @@
 <h3>Intro</h3>  
 
 
-First of all I wish to say that this program doesn’t fully meet all the requirements in the task. 
+First of all I want to say that this program doesn’t fully meet all the requirements in the task. 
  It’s because of two reasons:
 -	Due to lack of time to work with Visiual Studio at home I wrote this program mostly at https://dotnetfiddle.net/ROcqfN  during free time at work.  And there’s no possibilities to create UI except console and to create IO streams or SQL connections and databases 
 
@@ -23,7 +23,7 @@ PassengerRequest – class that represents requests from passengers.  Relative w
 DriverRequest – class that represents requests from drivers.  Relative with DriverRequests table 
 
 User class aggregate collections of  his PassengerRequest  and DriverRequest.   In this way each User 
-can be as a passenger as a driver depends on his needs.  
+can be  a passenger as well as a driver depends on his needs.  
 
 Also program has SearchResult class that represents results when we join UserTable on PassengerRequests  table or DriverRequests table
 
@@ -44,13 +44,13 @@ and make decision are they similar or not.  Off course it’s very simple and no
 <h3>How it’s work</h3>
 
 
-As I’ve noted above each user can make both driver requests and passenger requests.  User information consists only of user nickname and user contact information.  Each user received unique Id.  This Id will be users “key” to sign in. 
-In driver request user must declare city of departure, arrival city, month of departure and day of departure.   Can add other cities in its route where passengers can be landed. Note that the passenger can take a seat only in departure point but can leave it in any cities thru the driver route.   Also in the driver request shall be declared number of available seats for passengers.   Driver also can specify maximal weight and height of passenger luggage. 
-In passenger request user shall also indicate city of departure, arrival city, month of departure and day of departure.  In additional can declare luggage parameters. 
-Users can manage their request.  But not very  much.   For driver request owner user can change only 
+As I noted above each user can make both driver requests and passenger requests.  User information consists only of user nickname and user contact information.  Each user received unique Id.  This Id will be users “key” to sign in. 
+In driver request user must declare city of departure, arrival city, month of departure and day of departure.   Can add other cities in its route where passengers can be landed. Note that the passenger can take a seat only in departure point but can leave it in any cities thru the driver route.   Also in the driver request must be declared number of available seats for passengers.   Driver also can specify maximal weight and height of passenger luggage. 
+In passenger request user  also must indicate city of departure, arrival city, month of departure and day of departure.  Additionaly can be  declared luggage parameters. 
+Users can manage their requests.  But not very  much.   For driver request owner user can change only 
 number of available seats. In the passenger request user can’t change anything.  
-So if user needs to change request he shall to delete old request and create new. 
+So if user needs to change request he have to delete old request and create new. 
 Departure date include only day and month but not year.  I think situation when departure day will be after more than 12 month from creation day is not very real.  
 When the user claims a new request program make search for it immediately.  So user doesn’t need to make special search. 
 
-To test the program I’ve added 10 users and 10 requests.  In all of these requests Dnepr is a departure point, 1-st or 2-nd of May is a departure date, and Lvov or Odessa is  an arrival points with some small variation. 
+To test the program I added 10 users and 10 requests.  In all of these requests Dnepr is a departure point, 1-st or 2-nd of May is a departure date, and Lvov or Odessa is  an arrival points with some small variation. 
