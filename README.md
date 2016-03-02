@@ -1,4 +1,4 @@
-<h1>Comments   to “Traveler Companion" program</h1>
+<h1>Comments   to “Travel Companion" program</h1>
 
 <h3>Intro</h3>  
 
