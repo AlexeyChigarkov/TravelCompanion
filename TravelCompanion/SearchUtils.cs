@@ -105,8 +105,8 @@ namespace TravelCompanion
             {
                 var r = (from req in SqlSimulator.GetSqlSimulator().DriverRequests
 
-                         where 
-                              (IsStringsSimilar(req.ArrivalCity, request.ArrivalCity) || ListContainSimilarString(req.RouteCities, request.ArrivalCity))
+                         where IsStringsSimilar(req.DepartureCity,request.DepartureCity) 
+                              && (IsStringsSimilar(req.ArrivalCity, request.ArrivalCity) || ListContainSimilarString(req.RouteCities, request.ArrivalCity))
                               && req.AvailablePlaces > 0
                               && req.DepartureDay==request.DepartureDay
                               && req.DepartureMonth == request.DepartureMonth
@@ -152,8 +152,8 @@ namespace TravelCompanion
 
                 var r = (from req in SqlSimulator.GetSqlSimulator().PassengerRequests
 
-                         where 
-                              IsStringsSimilar(req.ArrivalCity, request.ArrivalCity)
+                         where   IsStringsSimilar(req.DepartureCity,request.DepartureCity) 
+                              && IsStringsSimilar(req.ArrivalCity, request.ArrivalCity)
                               && req.DepartureDay == request.DepartureDay
                               && req.DepartureMonth == request.DepartureMonth
                               && req.LuggageWeight <= request.LuggageWeight
