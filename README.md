@@ -5,7 +5,7 @@
 
 First of all I wish to say that this program doesn’t fully meet all the requirements in the task. 
  It’s because of two reasons:
--	Due to lack of time to work with Visiual Studio at home I wrote this program mostly here https://dotnetfiddle.net/ROcqfN  during free time at work.  And there’s no possibilities to create UI except console and to create IO streams or SQL connections and databases 
+-	Due to lack of time to work with Visiual Studio at home I wrote this program mostly at https://dotnetfiddle.net/ROcqfN  during free time at work.  And there’s no possibilities to create UI except console and to create IO streams or SQL connections and databases 
 
 -	My experience in the creating UI and SQL databases are poor and I need much more time for it
 Anyway I try to develop program with simple console interface and without real database.  To simulate 
